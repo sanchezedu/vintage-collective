@@ -114,7 +114,9 @@
             background: radial-gradient(circle, rgba(132,204,22,0.1) 0%, transparent 70%);
             border-radius: 50%;
         }
-        .hero-content { position: relative; z-index: 2; max-width: 600px; }
+        .hero-content { position: relative; z-index: 2; max-width: 500px; }
+        .hero-image { position: absolute; right: 5%; top: 50%; transform: translateY(-50%); width: 45%; max-width: 500px; z-index: 2; }
+        @media(max-width: 992px) { .hero-image { display: none; } }
         .hero-badge {
             display: inline-block;
             background: var(--dark);
@@ -292,11 +294,14 @@
             <div class="hero-content">
                 <div class="hero-badge fade-up">SOSTENIBLE & ÚNICO</div>
                 <h1 class="fade-up">Tu Estilo,<br><span class="green-text">Nuestra Pasión</span></h1>
-                <p class="fade-up">Ropa vintage y segunda mano premium. Piezas exclusivas con historia y personalidad.</p>
+                <p class="fade-up">Ropa vintage y segunda mano premium. Piezas exclusivas.</p>
                 <div class="fade-up" style="display:flex;gap:20px;flex-wrap:wrap;">
                     <a href="#tienda" class="btn btn-primary"><i class="fas fa-shopping-bag"></i> Ver Tienda</a>
                     <a href="#nosotros" class="btn" style="border:2px solid var(--dark);color:var(--dark);">Conócenos</a>
                 </div>
+            </div>
+            <div class="hero-image fade-up">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600" alt="Vintage" style="width:100%;border-radius:20px;box-shadow:10px 10px 0 var(--primary);">
             </div>
         </div>
     </section>
@@ -309,10 +314,7 @@
             </div>
             <div class="products-grid">
                 <div class="product-card fade-up">
-                    <div class="product-image">
-                        🧥
-                        <span class="product-tag">Nuevo</span>
-                    </div>
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400" alt="Chaqueta" style="width:100%;height:320px;object-fit:cover;"><span class="product-tag">Nuevo</span></div>
                     <div class="product-content">
                         <div class="product-category">Abrigos</div>
                         <h3>Chaqueta Vintage Años 80</h3>
@@ -320,7 +322,7 @@
                     </div>
                 </div>
                 <div class="product-card fade-up" style="animation-delay:0.1s">
-                    <div class="product-image">👖</div>
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=400" alt="Jeans" style="width:100%;height:320px;object-fit:cover;"></div>
                     <div class="product-content">
                         <div class="product-category">Pantalones</div>
                         <h3>Jeans Levi's Vintage</h3>
@@ -328,10 +330,7 @@
                     </div>
                 </div>
                 <div class="product-card fade-up" style="animation-delay:0.2s">
-                    <div class="product-image">
-                        👕
-                        <span class="product-tag">Rare</span>
-                    </div>
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400" alt="Camisa" style="width:100%;height:320px;object-fit:cover;"><span class="product-tag">Rare</span></div>
                     <div class="product-content">
                         <div class="product-category">Camisas</div>
                         <h3>Camisa Retro Band</h3>
@@ -339,7 +338,7 @@
                     </div>
                 </div>
                 <div class="product-card fade-up" style="animation-delay:0.3s">
-                    <div class="product-image">👗</div>
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400" alt="Vestido" style="width:100%;height:320px;object-fit:cover;"></div>
                     <div class="product-content">
                         <div class="product-category">Vestidos</div>
                         <h3>Vestido Floral Vintage</h3>
@@ -347,7 +346,7 @@
                     </div>
                 </div>
                 <div class="product-card fade-up" style="animation-delay:0.4s">
-                    <div class="product-image">🧢</div>
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400" alt="Gorra" style="width:100%;height:320px;object-fit:cover;"></div>
                     <div class="product-content">
                         <div class="product-category">Accesorios</div>
                         <h3>Gorra Vintage Sports</h3>
@@ -355,10 +354,7 @@
                     </div>
                 </div>
                 <div class="product-card fade-up" style="animation-delay:0.5s">
-                    <div class="product-image">
-                        👟
-                        <span class="product-tag">Sale</span>
-                    </div>
+                    <div class="product-image"><img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400" alt="Zapatos" style="width:100%;height:320px;object-fit:cover;"><span class="product-tag">Sale</span></div>
                     <div class="product-content">
                         <div class="product-category">Zapatos</div>
                         <h3>Sneakers Clásicos 90s</h3>
