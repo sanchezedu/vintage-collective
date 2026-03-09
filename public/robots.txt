@@ -1,0 +1,5 @@
+# Robots.txt
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Sitemap: https://vintage-collective.vercel.app/sitemap.xml
