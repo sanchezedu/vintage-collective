@@ -3,7 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vintage Collective - Antigüedades</title>
+    <title>Vintage Collective - Antigüedades y Piezas Únicas</title>
+    <meta name="description" content="Vintage Collective - Tienda de antigüedades en Guayaquil. Muebles victorianos, joyas Art Deco, arte del siglo XIX, relojes vintage. Piezas únicas con historia.">
+    <meta name="keywords" content="antigüedades, vintage, muebles, joyas, arte, Guayaquil, Ecuador, anticuario, colecciones">
+    <meta name="author" content="Vintage Collective">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vintage Collective - Antigüedades">
+    <meta property="og:description" content="Piezas Únicas con Historia. Descubre nuestra colección de antigüedades.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vintage-collective.vercel.app">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200">
+    <meta property="og:site_name" content="Vintage Collective">
+    <meta property="og:locale" content="es_EC">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vintage Collective - Antigüedades">
+    <meta name="twitter:description" content="Piezas únicas con historia. Explora nuestra colección.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Vintage Collective",
+        "description": "Tienda de antigüedades y piezas vintage",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Guayaquil",
+            "addressCountry": "EC"
+        },
+        "telephone": "+593999999999",
+        "openingHours": "Mo-Fr 10:00-19:00, Sa 10:00-17:00",
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200"
+    }
+    </script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -61,6 +99,25 @@
             .hero .container { flex-direction: column; text-align: center; }
             .hero-image { display: none; }
         }
+        
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #25D366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        .whatsapp-float i { color: white; font-size: 28px; }
     </style>
 </head>
 <body>
@@ -82,7 +139,7 @@
                 <a href="#tienda" class="btn">Explorar</a>
             </div>
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600" alt="Antigüedades">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600" alt="Antigüedades">
             </div>
         </div>
     </section>
@@ -121,7 +178,7 @@
             <div class="products-grid">
                 <div class="product-card" style="position:relative;">
                     <span class="product-badge">Nuevo</span>
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="Mueble">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="Mueble">
                     <div class="product-content">
                         <h3>Secretario Victoriano</h3>
                         <p>Mueble de caoba, siglo XIX.</p>
@@ -129,7 +186,7 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e35a6?w=400" alt="Reloj">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1513519245088-0e12902e35a6?w=400" alt="Reloj">
                     <div class="product-content">
                         <h3>Reloj de Pared</h3>
                         <p>Francia, circa 1880.</p>
@@ -137,7 +194,7 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400" alt="Cuadro">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400" alt="Cuadro">
                     <div class="product-content">
                         <h3>Paisaje del Siglo XIX</h3>
                         <p>Oleo sobre lienzo.</p>
@@ -146,7 +203,7 @@
                 </div>
                 <div class="product-card" style="position:relative;">
                     <span class="product-badge">Rare</span>
-                    <img src="https://images.unsplash.com/photo-1617038224558-28ad3fb558a7?w=400" alt="Joya">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1617038224558-28ad3fb558a7?w=400" alt="Joya">
                     <div class="product-content">
                         <h3>Broche Edwardiano</h3>
                         <p>Plata y amatista.</p>
@@ -198,5 +255,10 @@
             <div class="footer-bottom">© 2026 Vintage Collective. Todos los derechos reservados.</div>
         </div>
     </footer>
+    
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/593999999999" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 </html>
